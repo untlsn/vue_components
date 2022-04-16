@@ -1,0 +1,27 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - plugin:vue/vue3-recommended
+  - airbnb-base
+parserOptions:
+  ecmaVersion: latest
+  parser: '@typescript-eslint/parser'
+  sourceType: module
+plugins:
+  - only-warn
+  - vue
+  - '@typescript-eslint'
+rules: 
+  import/no-unresolved: off
+  import/extensions: off
+  no-undef: off
+  no-unused-vars: off
+  func-call-spacing: off
+  no-spaced-func: off
+  vue/multi-word-component-names: off
+  eqeqeq: off
+  vue/max-attributes-per-line: 
+    - warn
+    - singleline:
+        max: 3
